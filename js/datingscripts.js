@@ -14,24 +14,28 @@ $(function() {
 //If person is short, old, male, they should date Paula Abdul
 //If person is tall, old, male, they should date Elle MacPherson
 
-    if (age < 35 && height < 64 && gender === "female") {
-      $("#celebrity").text("Tom Cruise");
-    } else if (age < 35 && height >= 64 && gender === "female") {
-      $("#celebrity").text("Max Muller");
-    } else if (age >= 35 && height < 64 && gender === "female") {
-      $("#celebrity").text("Danny DeVeto");
-    } else if (age >= 35 && height >= 64 && gender === "female") {
-      $("#celebrity").text("Morgan Freeman");
-    } else if (age < 35 && height < 69 && gender === "male") {
-      $("#celebrity").text("Eva Longoria");
-    } else if (age < 35 && height >= 69 && gender === "male") {
-      $("#celebrity").text("Taylor Swift");
-    } else if (age >= 35 && height < 69 && gender === "male") {
-      $("#celebrity").text("Paula Abdul");
-    } else if (age >= 35 && height >= 69 && gender === "male") {
-      $("#celebrity").text("Elle MacPherson");
+    if (age && height) {
+      if (age < 35 && height < 64 && gender === "female") {
+        $("#celebrity").text("Tom Cruise");
+      } else if (age < 35 && height >= 64 && gender === "female") {
+        $("#celebrity").text("Max Muller");
+      } else if (age >= 35 && height < 64 && gender === "female") {
+        $("#celebrity").text("Danny DeVeto");
+      } else if (age >= 35 && height >= 64 && gender === "female") {
+        $("#celebrity").text("Morgan Freeman");
+      } else if (age < 35 && height < 69 && gender === "male") {
+        $("#celebrity").text("Eva Longoria");
+      } else if (age < 35 && height >= 69 && gender === "male") {
+        $("#celebrity").text("Taylor Swift");
+      } else if (age >= 35 && height < 69 && gender === "male") {
+        $("#celebrity").text("Paula Abdul");
+      } else if (age >= 35 && height >= 69 && gender === "male") {
+        $("#celebrity").text("Elle MacPherson");
+      }
+      $("#match").show();
+    } else{
+      alert("Please enter all your details.")
     }
-    $("#match").show();
 
     event.preventDefault();
   });
