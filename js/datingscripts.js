@@ -17,7 +17,7 @@ $(function() {
     if (age < 35 && height < 64 && gender === "female") {
       $("#celebrity").text("Tom Cruise");
     } else if (age < 35 && height >= 64 && gender === "female") {
-      $("#celebrity").text("Channing Tatum");
+      $("#celebrity").text("Max Muller");
     } else if (age >= 35 && height < 64 && gender === "female") {
       $("#celebrity").text("Danny DeVeto");
     } else if (age >= 35 && height >= 64 && gender === "female") {
