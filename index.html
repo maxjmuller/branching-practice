@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Amusement Park</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Celebrity-dating</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/datingscripts.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <h1>Welcome to our amusementpark!</h1>
-      <button class="btn" id="amusebtn">"What is your height in feet?"</button>
-        <h2>Here are the rides you can ride:</h2>
-        <ul>
-          <div id="tall">
-            <li>The Slammer</li>
-            <li>The Dare Devil</li>
-            <li>The Lord Have Mercy</li>
-          </div>
-          <div id="short">
-            <li>The teacups</li>
-            <li>The ball pit</li>
-          </div>
-        </ul>
+      <h1>Celebrity-dating</h1>
+
+      <p>Enter your details and we will match you with your dream celebrity!!! </p>
+
+      <form id="dating">
+        <label for="age">Age</label>
+        <input id="age" type="text"></input>
+        <label for="height">Height</label>
+        <input id="height" type="text"></input>
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+
+        <button type="submit" class="btn">Match me:</button>
+      </form>
+
+      <div id="match">
+        <p>You should date <span id="celebrity"></span>.</p>
       </div>
     </div>
   </body>

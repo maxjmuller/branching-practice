@@ -1,3 +1,11 @@
 #tall, #short {
   display: none;
 }
+
+.btn {
+  display: block;
+}
+
+#match {
+  display: none;
+}
